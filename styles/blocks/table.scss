@@ -4,6 +4,8 @@ $bg-color-row-2n: #bc7865;
 $del: #8f1313;
 $border-active: #cd2524;
 $bg-active: #0e2849;
+$color-text-1: #d5ba35;
+$color-text-2: #e2816c;
 
 .table {
   width: 1100px;
@@ -68,6 +70,14 @@ $bg-active: #0e2849;
   @media (max-width: $mobile-width) {
     width: 92px;
   }
+}
+
+.table__quality {
+  color: $color-text-1;
+}
+
+.table__sprint {
+  color: $color-text-2;
 }
 
 .table__row {
@@ -147,5 +157,9 @@ $bg-active: #0e2849;
 }
 
 .table__row:hover .table__data--bold {
+  color: $text-color;
+}
+
+.table__row:hover span {
   color: $text-color;
 }
