@@ -35,7 +35,7 @@ img {
   font-size: 26px;
   line-height: 30px;
   color: #f7ead0;
-  background-image: url("../../image/hero-bg.jpg");
+  background-image: url("../image/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ img {
 }
 @media (max-width: 1049px) {
   .page__body {
-    background-image: url("../../image/bg-tablet.jpg");
+    background-image: url("../image/bg-tablet.jpg");
   }
 }
 

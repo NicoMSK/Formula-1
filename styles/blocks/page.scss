@@ -8,13 +8,13 @@
   font-size: 26px;
   line-height: 30px;
   color: $text-color;
-  background-image: url("../../image/hero-bg.jpg");
+  background-image: url("../image/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: $background-color;
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../image/bg-tablet.jpg");
+    background-image: url("../image/bg-tablet.jpg");
   }
 }
