@@ -1,0 +1,17 @@
+.container {
+  width: 1180px;
+  margin: 30px auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: rgba($background-color, 0.9);
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 460px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

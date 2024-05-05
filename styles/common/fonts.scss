@@ -1,0 +1,5 @@
+$regular-font: "Roboto", "Arial", sans-serif;
+$bold-font: "Roboto Bold", "Arial", sans-serif;
+
+@include font-face ("Roboto", 400, normal, url("/fonts/roboto/Roboto-Regular.woff2") format("woff2"));
+@include font-face ("Roboto Bold", 700, normal, url("/fonts/roboto/Roboto-Bold.woff2") format("woff2"));

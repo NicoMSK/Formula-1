@@ -1,0 +1,151 @@
+$title-color: #ffcfab;
+$bg-color-row: #6f3b2e;
+$bg-color-row-2n: #bc7865;
+$del: #8f1313;
+$border-active: #cd2524;
+$bg-active: #0e2849;
+
+.table {
+  width: 1100px;
+  border-spacing: 5px;
+  border-collapse: collapse;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.table__data--none {
+  @media (max-width: $mobile-width) {
+    display: none;
+
+  }
+}
+
+.table__title {
+  padding: 10px;
+  font-family: $bold-font;
+  color: $title-color;
+
+  border-bottom: 1px solid $title-color;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.table__row-head {
+  border-bottom: 3px solid $title-color;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.table__data-head {
+  padding: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.table__data-head--width {
+  width: 225px;
+
+  @media (max-width: $tablet-width) {
+    width: 123px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 92px;
+  }
+}
+
+.table__row {
+  border-bottom: 1px solid $title-color;
+  background-color: rgba($bg-color-row, 0.4);
+
+
+  &:nth-child(2n) {
+    background-color: rgba($bg-color-row-2n, 0.4);
+  }
+
+  &:nth-child(6) {
+    border: 3px solid $border-active;
+    background-color: $bg-active;
+  }
+
+  &:hover {
+    background-color: $bg-color-row-2n;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.table__row--bahrain,
+.table__row--saudi-srabia,
+.table__row--australia,
+.table__row--japan,
+.table__row--china {
+  position: relative;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1070px;
+    height: 5px;
+    top: 20px;
+    left: 15px;
+    background-color: $del;
+
+    @media (max-width: $tablet-width) {
+      width: 650px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 12px;
+      width: 390px;
+    }
+  }
+}
+
+.table__data {
+  padding: 7px;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.table__data--bold {
+  font-weight: 700;
+  color: $title-color;
+
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+  }
+}
+
+.table__row:hover .table__data--bold {
+  color: $text-color;
+}
