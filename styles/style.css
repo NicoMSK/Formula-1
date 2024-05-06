@@ -5,7 +5,6 @@
   src: url("/fonts/roboto/Roboto-Regular.woff2") format("woff2");
   font-display: swap;
 }
-
 @font-face {
   font-family: "Roboto Bold";
   font-weight: 700;
@@ -13,11 +12,9 @@
   src: url("/fonts/roboto/Roboto-Bold.woff2") format("woff2");
   font-display: swap;
 }
-
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -25,7 +22,7 @@ img {
   max-width: 100%;
   height: auto;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .page {
@@ -44,7 +41,6 @@ img {
   background-repeat: no-repeat;
   background-color: #00665e;
 }
-
 @media (max-width: 1049px) {
   .page__body {
     background-image: url("../image/bg-tablet.jpg");
@@ -52,19 +48,17 @@ img {
 }
 
 .container {
-  width: 1180px;
+  width: 1200px;
   margin: 30px auto;
   padding: 20px 40px;
   border-radius: 20px;
   background-color: rgba(0, 102, 94, 0.9);
 }
-
 @media (max-width: 1049px) {
   .container {
     width: 768px;
   }
 }
-
 @media (max-width: 767px) {
   .container {
     width: 460px;
@@ -74,11 +68,10 @@ img {
 }
 
 .table {
-  width: 1100px;
+  width: 1120px;
   border-spacing: 5px;
   border-collapse: collapse;
 }
-
 @media (max-width: 1049px) {
   .table {
     width: 100%;
@@ -97,13 +90,11 @@ img {
   color: #ffcfab;
   border-bottom: 1px solid #ffcfab;
 }
-
 @media (max-width: 1049px) {
   .table__title {
     font-size: 20px;
   }
 }
-
 @media (max-width: 1049px) {
   .table__title {
     font-size: 16px;
@@ -113,13 +104,11 @@ img {
 .table__row-head {
   border-bottom: 3px solid #ffcfab;
 }
-
 @media (max-width: 1049px) {
   .table__row-head {
     font-size: 18px;
   }
 }
-
 @media (max-width: 767px) {
   .table__row-head {
     font-size: 14px;
@@ -129,7 +118,6 @@ img {
 .table__data-head {
   padding: 10px;
 }
-
 @media (max-width: 1049px) {
   .table__data-head {
     padding: 0;
@@ -139,13 +127,11 @@ img {
 .table__data-head--width {
   width: 225px;
 }
-
 @media (max-width: 1049px) {
   .table__data-head--width {
     width: 123px;
   }
 }
-
 @media (max-width: 767px) {
   .table__data-head--width {
     width: 92px;
@@ -164,26 +150,21 @@ img {
   border-bottom: 1px solid #ffcfab;
   background-color: rgba(111, 59, 46, 0.4);
 }
-
 .table__row:nth-child(2n) {
   background-color: rgba(188, 120, 101, 0.4);
 }
-
-.table__row:nth-child(6) {
+.table__row:nth-child(7) {
   border: 3px solid #cd2524;
   background-color: #0e2849;
 }
-
 .table__row:hover {
   background-color: #bc7865;
 }
-
 @media (max-width: 1049px) {
   .table__row {
     font-size: 18px;
   }
 }
-
 @media (max-width: 767px) {
   .table__row {
     font-size: 14px;
@@ -194,23 +175,24 @@ img {
 .table__row--saudi-srabia,
 .table__row--australia,
 .table__row--japan,
-.table__row--china {
+.table__row--china,
+.table__row--usa-miami {
   position: relative;
 }
-
 .table__row--bahrain:hover,
 .table__row--saudi-srabia:hover,
 .table__row--australia:hover,
 .table__row--japan:hover,
-.table__row--china:hover {
+.table__row--china:hover,
+.table__row--usa-miami:hover {
   background-color: transparent;
 }
-
 .table__row--bahrain::after,
 .table__row--saudi-srabia::after,
 .table__row--australia::after,
 .table__row--japan::after,
-.table__row--china::after {
+.table__row--china::after,
+.table__row--usa-miami::after {
   content: "";
   position: absolute;
   width: 1070px;
@@ -219,25 +201,23 @@ img {
   left: 15px;
   background-color: #8f1313;
 }
-
 @media (max-width: 1049px) {
-
   .table__row--bahrain::after,
   .table__row--saudi-srabia::after,
   .table__row--australia::after,
   .table__row--japan::after,
-  .table__row--china::after {
+  .table__row--china::after,
+  .table__row--usa-miami::after {
     width: 650px;
   }
 }
-
 @media (max-width: 767px) {
-
   .table__row--bahrain::after,
   .table__row--saudi-srabia::after,
   .table__row--australia::after,
   .table__row--japan::after,
-  .table__row--china::after {
+  .table__row--china::after,
+  .table__row--usa-miami::after {
     top: 12px;
     width: 390px;
   }
@@ -247,7 +227,6 @@ img {
   padding: 7px;
   text-align: center;
 }
-
 @media (max-width: 767px) {
   .table__data {
     padding: 0;
@@ -258,7 +237,6 @@ img {
   font-weight: 700;
   color: #ffcfab;
 }
-
 @media (max-width: 767px) {
   .table__data--bold {
     font-weight: 400;
@@ -271,6 +249,4 @@ img {
 
 .table__row:hover span {
   color: #f7ead0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
