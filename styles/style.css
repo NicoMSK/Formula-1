@@ -176,7 +176,8 @@ img {
 .table__row--australia,
 .table__row--japan,
 .table__row--china,
-.table__row--usa-miami {
+.table__row--usa-miami,
+.table__row--italy-imola {
   position: relative;
 }
 .table__row--bahrain:hover,
@@ -184,7 +185,8 @@ img {
 .table__row--australia:hover,
 .table__row--japan:hover,
 .table__row--china:hover,
-.table__row--usa-miami:hover {
+.table__row--usa-miami:hover,
+.table__row--italy-imola:hover {
   background-color: transparent;
 }
 .table__row--bahrain::after,
@@ -192,7 +194,8 @@ img {
 .table__row--australia::after,
 .table__row--japan::after,
 .table__row--china::after,
-.table__row--usa-miami::after {
+.table__row--usa-miami::after,
+.table__row--italy-imola::after {
   content: "";
   position: absolute;
   width: 1070px;
@@ -207,7 +210,8 @@ img {
   .table__row--australia::after,
   .table__row--japan::after,
   .table__row--china::after,
-  .table__row--usa-miami::after {
+  .table__row--usa-miami::after,
+  .table__row--italy-imola::after {
     width: 650px;
   }
 }
@@ -217,7 +221,8 @@ img {
   .table__row--australia::after,
   .table__row--japan::after,
   .table__row--china::after,
-  .table__row--usa-miami::after {
+  .table__row--usa-miami::after,
+  .table__row--italy-imola::after {
     top: 12px;
     width: 390px;
   }
