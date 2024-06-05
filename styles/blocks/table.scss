@@ -89,7 +89,7 @@ $color-text-2: #e2816c;
     background-color: rgba($bg-color-row-2n, 0.4);
   }
 
-  &:nth-child(7) {
+  &:nth-child(9) {
     border: 3px solid $border-active;
     background-color: $bg-active;
   }
@@ -113,7 +113,8 @@ $color-text-2: #e2816c;
 .table__row--japan,
 .table__row--china,
 .table__row--usa-miami,
-.table__row--italy-imola {
+.table__row--italy-imola,
+.table__row--monaco {
   position: relative;
 
   &:hover {
