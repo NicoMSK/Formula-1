@@ -153,7 +153,7 @@ img {
 .table__row:nth-child(2n) {
   background-color: rgba(188, 120, 101, 0.4);
 }
-.table__row:nth-child(9) {
+.table__row:nth-child(11) {
   border: 3px solid #cd2524;
   background-color: #0e2849;
 }
@@ -178,7 +178,9 @@ img {
 .table__row--china,
 .table__row--usa-miami,
 .table__row--italy-imola,
-.table__row--monaco {
+.table__row--monaco,
+.table__row--canada,
+.table__row--spain {
   position: relative;
 }
 .table__row--bahrain:hover,
@@ -188,7 +190,9 @@ img {
 .table__row--china:hover,
 .table__row--usa-miami:hover,
 .table__row--italy-imola:hover,
-.table__row--monaco:hover {
+.table__row--monaco:hover,
+.table__row--canada:hover,
+.table__row--spain:hover {
   background-color: transparent;
 }
 .table__row--bahrain::after,
@@ -198,7 +202,9 @@ img {
 .table__row--china::after,
 .table__row--usa-miami::after,
 .table__row--italy-imola::after,
-.table__row--monaco::after {
+.table__row--monaco::after,
+.table__row--canada::after,
+.table__row--spain::after {
   content: "";
   position: absolute;
   width: 1070px;
@@ -215,7 +221,9 @@ img {
   .table__row--china::after,
   .table__row--usa-miami::after,
   .table__row--italy-imola::after,
-  .table__row--monaco::after {
+  .table__row--monaco::after,
+  .table__row--canada::after,
+  .table__row--spain::after {
     width: 650px;
   }
 }
@@ -227,7 +235,9 @@ img {
   .table__row--china::after,
   .table__row--usa-miami::after,
   .table__row--italy-imola::after,
-  .table__row--monaco::after {
+  .table__row--monaco::after,
+  .table__row--canada::after,
+  .table__row--spain::after {
     top: 12px;
     width: 390px;
   }
