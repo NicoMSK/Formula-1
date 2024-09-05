@@ -87,7 +87,7 @@ $color-text-2: #e2816c;
     background-color: rgba($bg-color-row-2n, 0.4);
   }
   /// поправить тут число в скобках
-  &:nth-child(11) {
+  &:nth-child(17) {
     border: 3px solid $border-active;
     background-color: $bg-active;
   }
@@ -115,7 +115,13 @@ $color-text-2: #e2816c;
 .table__row--italy-imola,
 .table__row--monaco,
 .table__row--canada,
-.table__row--spain {
+.table__row--spain,
+.table__row--austria,
+.table__row--britain,
+.table__row--hungary,
+.table__row--belgium,
+.table__row--netherlands,
+.table__row--italy-monza {
   position: relative;
 
   &:hover {
