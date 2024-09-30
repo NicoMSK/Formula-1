@@ -153,7 +153,7 @@ img {
 .table__row:nth-child(2n) {
   background-color: rgba(188, 120, 101, 0.4);
 }
-.table__row:nth-child(17) {
+.table__row:nth-child(19) {
   border: 3px solid #cd2524;
   background-color: #0e2849;
 }
@@ -186,7 +186,9 @@ img {
 .table__row--hungary,
 .table__row--belgium,
 .table__row--netherlands,
-.table__row--italy-monza {
+.table__row--italy-monza,
+.table__row--azerbaijan,
+.table__row--singapore {
   position: relative;
 }
 .table__row--bahrain:hover,
@@ -204,7 +206,9 @@ img {
 .table__row--hungary:hover,
 .table__row--belgium:hover,
 .table__row--netherlands:hover,
-.table__row--italy-monza:hover {
+.table__row--italy-monza:hover,
+.table__row--azerbaijan:hover,
+.table__row--singapore:hover {
   background-color: transparent;
 }
 .table__row--bahrain::after,
@@ -222,7 +226,9 @@ img {
 .table__row--hungary::after,
 .table__row--belgium::after,
 .table__row--netherlands::after,
-.table__row--italy-monza::after {
+.table__row--italy-monza::after,
+.table__row--azerbaijan::after,
+.table__row--singapore::after {
   content: "";
   position: absolute;
   width: 1070px;
@@ -247,7 +253,9 @@ img {
   .table__row--hungary::after,
   .table__row--belgium::after,
   .table__row--netherlands::after,
-  .table__row--italy-monza::after {
+  .table__row--italy-monza::after,
+  .table__row--azerbaijan::after,
+  .table__row--singapore::after {
     width: 650px;
   }
 }
@@ -267,7 +275,9 @@ img {
   .table__row--hungary::after,
   .table__row--belgium::after,
   .table__row--netherlands::after,
-  .table__row--italy-monza::after {
+  .table__row--italy-monza::after,
+  .table__row--azerbaijan::after,
+  .table__row--singapore::after {
     top: 12px;
     width: 390px;
   }

@@ -87,7 +87,7 @@ $color-text-2: #e2816c;
     background-color: rgba($bg-color-row-2n, 0.4);
   }
   /// поправить тут число в скобках
-  &:nth-child(17) {
+  &:nth-child(19) {
     border: 3px solid $border-active;
     background-color: $bg-active;
   }
@@ -121,7 +121,9 @@ $color-text-2: #e2816c;
 .table__row--hungary,
 .table__row--belgium,
 .table__row--netherlands,
-.table__row--italy-monza {
+.table__row--italy-monza,
+.table__row--azerbaijan,
+.table__row--singapore {
   position: relative;
 
   &:hover {
