@@ -153,7 +153,7 @@ img {
 .table__row:nth-child(2n) {
   background-color: rgba(188, 120, 101, 0.4);
 }
-.table__row:nth-child(22) {
+.table__row:nth-child(24) {
   border: 3px solid #cd2524;
   background-color: #0e2849;
 }
@@ -191,7 +191,9 @@ img {
 .table__row--singapore,
 .table__row--usa-austin,
 .table__row--mexico,
-.table__row--brazil {
+.table__row--brazil,
+.table__row--usa-vegas,
+.table__row--qatar {
   position: relative;
 }
 .table__row--bahrain:hover,
@@ -214,7 +216,9 @@ img {
 .table__row--singapore:hover,
 .table__row--usa-austin:hover,
 .table__row--mexico:hover,
-.table__row--brazil:hover {
+.table__row--brazil:hover,
+.table__row--usa-vegas:hover,
+.table__row--qatar:hover {
   background-color: transparent;
 }
 .table__row--bahrain::after,
@@ -237,7 +241,9 @@ img {
 .table__row--singapore::after,
 .table__row--usa-austin::after,
 .table__row--mexico::after,
-.table__row--brazil::after {
+.table__row--brazil::after,
+.table__row--usa-vegas::after,
+.table__row--qatar::after {
   content: "";
   position: absolute;
   width: 1070px;
@@ -267,7 +273,9 @@ img {
   .table__row--singapore::after,
   .table__row--usa-austin::after,
   .table__row--mexico::after,
-  .table__row--brazil::after {
+  .table__row--brazil::after,
+  .table__row--usa-vegas::after,
+  .table__row--qatar::after {
     width: 650px;
   }
 }
@@ -292,7 +300,9 @@ img {
   .table__row--singapore::after,
   .table__row--usa-austin::after,
   .table__row--mexico::after,
-  .table__row--brazil::after {
+  .table__row--brazil::after,
+  .table__row--usa-vegas::after,
+  .table__row--qatar::after {
     top: 12px;
     width: 390px;
   }
