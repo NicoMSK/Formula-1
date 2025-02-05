@@ -87,7 +87,7 @@ $color-text-2: #e2816c;
     background-color: rgba($bg-color-row-2n, 0.4);
   }
   /// поправить тут число в скобках
-  &:nth-child(24) {
+  &:nth-child(1) {
     border: 3px solid $border-active;
     background-color: $bg-active;
   }
@@ -106,54 +106,55 @@ $color-text-2: #e2816c;
 }
 
 /// добавить класс, чтоб вычеркнуть
-.table__row--bahrain,
-.table__row--saudi-srabia,
-.table__row--australia,
-.table__row--japan,
-.table__row--china,
-.table__row--usa-miami,
-.table__row--italy-imola,
-.table__row--monaco,
-.table__row--canada,
-.table__row--spain,
-.table__row--austria,
-.table__row--britain,
-.table__row--hungary,
-.table__row--belgium,
-.table__row--netherlands,
-.table__row--italy-monza,
-.table__row--azerbaijan,
-.table__row--singapore,
-.table__row--usa-austin,
-.table__row--mexico,
-.table__row--brazil,
-.table__row--usa-vegas,
-.table__row--qatar {
-  position: relative;
+// .table__row--australia,
+// .table__row--china,
+// .table__row--japan,
+// .table__row--bahrain,
+// .table__row--saudi-srabia,
+// .table__row--usa-miami,
+// .table__row--italy-imola,
+// .table__row--monaco,
+// .table__row--canada,
+// .table__row--spain,
+// .table__row--austria,
+// .table__row--britain,
+// .table__row--hungary,
+// .table__row--belgium,
+// .table__row--netherlands,
+// .table__row--italy-monza,
+// .table__row--azerbaijan,
+// .table__row--singapore,
+// .table__row--usa-austin,
+// .table__row--mexico,
+// .table__row--brazil,
+// .table__row--usa-vegas,
+// .table__row--qatar
+//  {
+//   position: relative;
 
-  &:hover {
-    background-color: transparent;
-  }
+//   &:hover {
+//     background-color: transparent;
+//   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 1070px;
-    height: 5px;
-    top: 20px;
-    left: 15px;
-    background-color: $del;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 1070px;
+//     height: 5px;
+//     top: 20px;
+//     left: 15px;
+//     background-color: $del;
 
-    @media (max-width: $tablet-width) {
-      width: 650px;
-    }
+//     @media (max-width: $tablet-width) {
+//       width: 650px;
+//     }
 
-    @media (max-width: $mobile-width) {
-      top: 12px;
-      width: 390px;
-    }
-  }
-}
+//     @media (max-width: $mobile-width) {
+//       top: 12px;
+//       width: 390px;
+//     }
+//   }
+// }
 
 .table__data {
   padding: 7px;
