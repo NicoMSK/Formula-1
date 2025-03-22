@@ -86,12 +86,11 @@ $color-text-2: #e2816c;
   &:nth-child(2n) {
     background-color: rgba($bg-color-row-2n, 0.4);
   }
-  /// поправить тут число в скобках
-  &:nth-child(1) {
-    border: 3px solid $border-active;
-    background-color: $bg-active;
-  }
-
+  // /// поправить тут число в скобках
+  // &:nth-child(1) {
+  //   border: 3px solid $border-active;
+  //   background-color: $bg-active;
+  // }
   &:hover {
     background-color: $bg-color-row-2n;
   }
@@ -105,7 +104,12 @@ $color-text-2: #e2816c;
   }
 }
 
-/// добавить класс, чтоб вычеркнуть
+.table__row.table__row--current {
+  border: 3px solid $border-active;
+  background-color: $bg-active;
+}
+
+/// добавить класс, чтобы вычеркнуть
 // .table__row--australia,
 // .table__row--china,
 // .table__row--japan,
@@ -129,32 +133,34 @@ $color-text-2: #e2816c;
 // .table__row--brazil,
 // .table__row--usa-vegas,
 // .table__row--qatar
-//  {
-//   position: relative;
 
-//   &:hover {
-//     background-color: transparent;
-//   }
+.table__row--completed {
+  position: relative;
+  background-color: rgb(67, 85, 79);
 
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 1070px;
-//     height: 5px;
-//     top: 20px;
-//     left: 15px;
-//     background-color: $del;
+  &:hover {
+    background-color: transparent;
+  }
 
-//     @media (max-width: $tablet-width) {
-//       width: 650px;
-//     }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1070px;
+    height: 7px;
+    top: 20px;
+    left: 15px;
+    background-color: $del;
 
-//     @media (max-width: $mobile-width) {
-//       top: 12px;
-//       width: 390px;
-//     }
-//   }
-// }
+    @media (max-width: $tablet-width) {
+      width: 650px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 12px;
+      width: 390px;
+    }
+  }
+}
 
 .table__data {
   padding: 7px;
